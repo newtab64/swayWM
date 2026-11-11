@@ -25,6 +25,23 @@ while IFS= read -r -d '' src; do
   echo "installed ~/$rel"
 done < <(find "$ROOT/home" -type f -print0 | sort -z)
 
+# Firefox: copy userChrome.css into every profile and allow it (Firefox ignores it otherwise).
+for base in "$HOME/.mozilla/firefox" "$HOME/.var/app/org.mozilla.firefox/.mozilla/firefox" \
+            "$HOME/snap/firefox/common/.mozilla/firefox"; do
+  [ -d "$base" ] || continue
+  for prefs in "$base"/*/prefs.js; do
+    [ -f "$prefs" ] || continue
+    profile="$(dirname "$prefs")"
+    run mkdir -p "$profile/chrome"
+    run cp "$ROOT/firefox/chrome/userChrome.css" "$profile/chrome/userChrome.css"
+    pref='user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);'
+    if [ "$DRY" = 0 ] && ! grep -qs 'legacyUserProfileCustomizations' "$profile/user.js"; then
+      echo "$pref" >> "$profile/user.js"
+    fi
+    echo "installed Firefox userChrome.css in ${profile/#$HOME/~}"
+  done
+done
+
 # Refresh the font cache and confirm the font is visible.
 if [ "$DRY" = 0 ]; then
   fc-cache -f

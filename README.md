@@ -40,6 +40,13 @@ Files that are not in this repo are left alone.
 | `.local/share/fonts/` | JetBrainsMono Nerd Font Mono Regular. |
 | `.bashrc.d/prompt.sh` | `PS1='\u@PC:\w\$ '` (Fedora's `.bashrc` already sources this folder). |
 
+## Firefox
+
+`firefox/chrome/userChrome.css` themes Firefox's own interface (tabs, address bar, menus) in
+the same palette. `install.sh` copies it into every Firefox profile it finds and enables
+`toolkit.legacyUserProfileCustomizations.stylesheets` in that profile's `user.js`. Restart
+Firefox afterwards. It does not touch web pages.
+
 ## Palette
 
 Colours from the Charcoal Monochrome Dark theme of
