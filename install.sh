@@ -39,10 +39,10 @@ fi
 # Refresh the font cache and confirm the font is visible.
 if [ "$DRY" = 0 ]; then
   fc-cache -f
-  if fc-list | grep -i "JetBrainsMono Nerd Font Mono" > /dev/null; then
+  if fc-list | grep -i "SF Pro" > /dev/null; then
     echo "font OK"
   else
-    echo "warning: JetBrainsMono Nerd Font Mono not found" >&2
+    echo "warning: SF Pro not found. Put the .otf/.ttf files in ~/.local/share/fonts and run fc-cache -f" >&2
   fi
 fi
 
