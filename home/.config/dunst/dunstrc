@@ -1,0 +1,39 @@
+# Earth Blue notifications (dunst). Minimal: no icons, 1px border, regular weight.
+[global]
+    font = JetBrainsMono Nerd Font Mono 12
+    format = "%s\n%b"
+    markup = no
+    icon_position = off
+    width = (0, 360)
+    origin = top-right
+    offset = (16, 56)
+    padding = 12
+    horizontal_padding = 12
+    frame_width = 1
+    corner_radius = 0
+    gap_size = 8
+    separator_height = 0
+    show_indicators = no
+    progress_bar_height = 8
+    progress_bar_frame_width = 1
+    progress_bar_corner_radius = 0
+
+[urgency_low]
+    background = "#0b111c"
+    foreground = "#5f7fa6"
+    frame_color = "#5f7fa6"
+    timeout = 4
+
+[urgency_normal]
+    background = "#0b111c"
+    foreground = "#a9c4e6"
+    frame_color = "#8fb3de"
+    highlight = "#8fb3de"
+    timeout = 4
+
+[urgency_critical]
+    background = "#0b111c"
+    foreground = "#d6e6fa"
+    frame_color = "#d6e6fa"
+    highlight = "#d6e6fa"
+    timeout = 0
