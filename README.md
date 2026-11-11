@@ -1,6 +1,6 @@
 # Fern for Fedora Sway Atomic
 
-A minimal, light-blue-and-cream desktop theme for **Fedora Sway Atomic 45**, in the spirit of
+A minimal, deep charcoal desktop theme for **Fedora Sway Atomic 45**, in the spirit of
 [mubin-thinks/minimal-wm-config](https://github.com/mubin-thinks/minimal-wm-config).
 Pure dotfiles: **nothing is layered** onto the base image and no package is installed.
 
@@ -42,17 +42,16 @@ Files that are not in this repo are left alone.
 
 ## Palette
 
-Taken from the colours in the `earth.avif` wallpaper: the deep blue of the planet, its cloud
-blue lifted to light blue, and the yellow of the city lights, used sparingly.
+Neutral greys only, deep and low in glare for working late. Nothing is pure black or pure white.
 
 | Role | Hex |
 |---|---|
-| background | `#040d17` |
-| main (bar, borders, prompt, selection) | `#8fb8e8` |
-| dim (inactive windows, comments) | `#3b5a82` |
-| text | `#b4c8e0` |
-| bright text (highlights, launcher selection) | `#dfeafa` |
-| yellow (cursor, active workspace, warnings) | `#f2d36b` |
+| background | `#0b0b0b` |
+| main (bar, focused border, prompt) | `#bcbcbc` |
+| dim (inactive windows, comments) | `#808080` |
+| text | `#a4a4a4` |
+| bright (launcher selection, highlights) | `#d6d6d6` |
+| cursor, active workspace, warnings | `#d2d2d2` |
 
 ## Keybindings
 

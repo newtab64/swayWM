@@ -9,16 +9,16 @@
 }
 
 window#waybar {
-    background: #040d17;
-    border: 1px solid #8fb8e8;
+    background: #0b0b0b;
+    border: 1px solid #bcbcbc;
 }
 
 #clock, #pulseaudio, #network, #tray, #battery {
     margin: 8px 8px 8px 0px;
     padding: 2px 8px 2px 8px;
-    color: #040d17;
-    background-color: #8fb8e8;
-    border: 2px solid #3b5a82;
+    color: #0b0b0b;
+    background-color: #bcbcbc;
+    border: 2px solid #808080;
 }
 
 #workspaces {
@@ -30,16 +30,16 @@ window#waybar {
     font-family: "JetBrainsMono Nerd Font Mono";
     font-size: 14px;
     padding: 2px 8px 2px 0px;
-    color: #3b5a82;
+    color: #808080;
 }
 
 #workspaces button.focused {
-    color: #f2d36b;
+    color: #d2d2d2;
 }
 
 #workspaces button.urgent,
 #battery.warning, #battery.critical, #battery.urgent {
-    background-color: #f2d36b;
+    background-color: #d2d2d2;
     padding: 2px 8px;
-    color: #040d17;
+    color: #0b0b0b;
 }
