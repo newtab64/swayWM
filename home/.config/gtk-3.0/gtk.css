@@ -1,9 +1,9 @@
 /* Fern for GTK3 apps (Thunar): regular weight, flat, palette colours only. */
-@define-color bg  #0f1613;
-@define-color fg  #b9c9b0;
-@define-color dim #73886f;
-@define-color acc #a5b98f;
-@define-color bri #e4ecd8;
+@define-color bg  #0d1512;
+@define-color fg  #b5d1b0;
+@define-color dim #6a8a72;
+@define-color acc #9cc79a;
+@define-color bri #dff0d6;
 
 * {
     font-weight: normal;
@@ -61,8 +61,8 @@ treeview.view header button {
 
 row:selected, treeview.view:selected, iconview:selected, .view:selected,
 .sidebar row:selected, placessidebar row:selected, menuitem:hover, modelbutton:hover {
-    background-color: @acc;
-    color: @bg;
+    background-color: #1e2f26;
+    color: @bri;
 }
 
 menu, .menu, .popup {

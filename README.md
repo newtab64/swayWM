@@ -1,6 +1,6 @@
 # Fern for Fedora Sway Atomic
 
-A minimal, sage-green desktop theme for **Fedora Sway Atomic 45**, in the spirit of
+A minimal, pastel-fern desktop theme for **Fedora Sway Atomic 45**, in the spirit of
 [mubin-thinks/minimal-wm-config](https://github.com/mubin-thinks/minimal-wm-config).
 Pure dotfiles: **nothing is layered** onto the base image and no package is installed.
 
@@ -34,7 +34,7 @@ Files that are not in this repo are left alone. It also closes Thunar first and 
 | `.config/sway/config.d/10-fern.conf` | Font, borders, gaps, GTK icon theme and dark mode, `xwayland disable`. |
 | `.config/sway/environment` | Forces Wayland backends (GTK, Qt, SDL, Firefox, Electron). |
 | `.config/waybar/` | Bar: workspaces, tray, battery, wifi, volume, clock (icons only). |
-| `.config/foot/foot.ini` | Terminal colours, blinking lime cursor, 80% opaque background, 32px padding. |
+| `.config/foot/foot.ini` | Terminal colours, blinking sand cursor, 80% opaque background, 32px padding. |
 | `.config/rofi/fern.rasi` | Launcher theme. |
 | `.config/swaylock/config` | Lock screen colours. |
 | `.config/gtk-3.0/`, `.config/xfce4/…/thunar.xml` | Thunar theme and a plain list view (Name, Size). |
@@ -47,12 +47,12 @@ Files that are not in this repo are left alone. It also closes Thunar first and 
 
 | Role | Hex |
 |---|---|
-| background | `#0f1613` |
-| text | `#b9c9b0` |
-| dim (inactive, borders) | `#73886f` |
-| accent (bar, selection) | `#a5b98f` |
-| bright (focused border) | `#e4ecd8` |
-| lime (active workspace, cursor, selected launcher entry) | `#c8e27a` |
+| background | `#0d1512` |
+| text | `#b5d1b0` |
+| dim (inactive, borders) | `#6a8a72` |
+| accent (bar, selection) | `#9cc79a` |
+| bright (focused border) | `#dff0d6` |
+| sand (active workspace, cursor, selected launcher entry) | `#e6d98a` |
 
 ## Keybindings
 
