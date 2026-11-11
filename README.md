@@ -42,16 +42,17 @@ Files that are not in this repo are left alone.
 
 ## Palette
 
-Taken from the colours in the `earth.avif` wallpaper (deep blue of the planet, its cloud
-blue lifted to light blue, and the cream of the city lights).
+Taken from the colours in the `earth.avif` wallpaper: the deep blue of the planet, its cloud
+blue lifted to light blue, and the yellow of the city lights, used sparingly.
 
 | Role | Hex |
 |---|---|
-| background | `#06121e` |
-| main (bar, selection, accents) | `#9bbbe0` |
-| dim (inactive windows, borders) | `#46607e` |
-| yellow (focused border, active workspace, cursor, launcher selection) | `#f6deae` |
-| text | `#c4d6ea` |
+| background | `#040d17` |
+| main (bar, borders, prompt, selection) | `#8fb8e8` |
+| dim (inactive windows, comments) | `#3b5a82` |
+| text | `#b4c8e0` |
+| bright text (highlights, launcher selection) | `#dfeafa` |
+| yellow (cursor, active workspace, warnings) | `#f2d36b` |
 
 ## Keybindings
 

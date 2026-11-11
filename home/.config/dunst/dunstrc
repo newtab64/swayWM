@@ -19,21 +19,21 @@
     progress_bar_corner_radius = 0
 
 [urgency_low]
-    background = "#06121e"
-    foreground = "#46607e"
-    frame_color = "#46607e"
+    background = "#040d17"
+    foreground = "#3b5a82"
+    frame_color = "#3b5a82"
     timeout = 4
 
 [urgency_normal]
-    background = "#06121e"
-    foreground = "#9bbbe0"
-    frame_color = "#9bbbe0"
-    highlight = "#9bbbe0"
+    background = "#040d17"
+    foreground = "#8fb8e8"
+    frame_color = "#8fb8e8"
+    highlight = "#8fb8e8"
     timeout = 4
 
 [urgency_critical]
-    background = "#06121e"
-    foreground = "#f6deae"
-    frame_color = "#f6deae"
-    highlight = "#f6deae"
+    background = "#040d17"
+    foreground = "#dfeafa"
+    frame_color = "#8fb8e8"
+    highlight = "#dfeafa"
     timeout = 0
