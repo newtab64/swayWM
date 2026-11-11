@@ -1,6 +1,6 @@
-# Earth Blue for Fedora Sway Atomic
+# Fern for Fedora Sway Atomic
 
-A minimal, pastel-blue desktop theme for **Fedora Sway Atomic 45**, in the spirit of
+A minimal, sage-green desktop theme for **Fedora Sway Atomic 45**, in the spirit of
 [mubin-thinks/minimal-wm-config](https://github.com/mubin-thinks/minimal-wm-config).
 Pure dotfiles: **nothing is layered** onto the base image and no package is installed.
 
@@ -31,28 +31,28 @@ Files that are not in this repo are left alone. It also closes Thunar first and 
 | Path | Purpose |
 |---|---|
 | `.config/sway/config` | Fedora's stock sway config with two edits: wallpaper and the rofi theme. |
-| `.config/sway/config.d/10-earth-blue.conf` | Font, borders, gaps, GTK icon theme and dark mode, `xwayland disable`. |
+| `.config/sway/config.d/10-fern.conf` | Font, borders, gaps, GTK icon theme and dark mode, `xwayland disable`. |
 | `.config/sway/environment` | Forces Wayland backends (GTK, Qt, SDL, Firefox, Electron). |
 | `.config/waybar/` | Bar: workspaces, tray, battery, wifi, volume, clock (icons only). |
-| `.config/foot/foot.ini` | Terminal colours, blinking yellow cursor, 32px padding. |
-| `.config/rofi/earth-blue.rasi` | Launcher theme. |
+| `.config/foot/foot.ini` | Terminal colours, blinking lime cursor, 80% opaque background, 32px padding. |
+| `.config/rofi/fern.rasi` | Launcher theme. |
 | `.config/swaylock/config` | Lock screen colours. |
 | `.config/gtk-3.0/`, `.config/xfce4/…/thunar.xml` | Thunar theme and a plain list view (Name, Size). |
-| `.local/share/icons/EarthBlue/` | Minimal outline icon theme for files and folders. |
+| `.local/share/icons/Fern/` | Minimal outline icon theme for files and folders. |
 | `.local/share/fonts/` | JetBrainsMono Nerd Font Mono Regular. |
 | `.bashrc.d/prompt.sh` | `PS1='\u@PC:\w\$ '` (Fedora's `.bashrc` already sources this folder). |
-| `Pictures/earth.png` | Wallpaper. |
+| `Pictures/fern.png` | Wallpaper. |
 
 ## Palette
 
 | Role | Hex |
 |---|---|
-| background | `#0b111c` |
-| text | `#a9c4e6` |
-| dim (inactive, borders) | `#5f7fa6` |
-| accent (bar, selection) | `#8fb3de` |
-| bright (focused border) | `#d6e6fa` |
-| yellow (active workspace, cursor, selected launcher entry) | `#f2c97d` |
+| background | `#0f1613` |
+| text | `#b9c9b0` |
+| dim (inactive, borders) | `#73886f` |
+| accent (bar, selection) | `#a5b98f` |
+| bright (focused border) | `#e4ecd8` |
+| lime (active workspace, cursor, selected launcher entry) | `#c8e27a` |
 
 ## Keybindings
 
@@ -68,7 +68,7 @@ right-click an empty spot to untick entries you don't want. Separator lines are 
 ## Notes
 
 - **X11-only apps will not start.** To allow them, delete `xwayland disable` from
-  `10-earth-blue.conf` and remove `.config/sway/environment`.
+  `10-fern.conf` and remove `.config/sway/environment`.
 - Tested on Thunar 4.20 and, with older versions, sway, Waybar and foot in a headless
   Wayland session. See `NOTICE.md` for third-party credits.
 

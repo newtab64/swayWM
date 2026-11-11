@@ -8,6 +8,6 @@
 - **JetBrainsMono Nerd Font Mono** (SIL Open Font License 1.1, patched by Nerd Fonts v3.5.1):
   `home/.local/share/fonts/JetBrainsMonoNerdFontMono-Regular.ttf`. License text in
   `licenses/JetBrainsMono-OFL.txt`.
-- **Wallpaper** (`home/Pictures/earth.png`): a night-time photograph of Earth from orbit.
+- **Wallpaper** (`home/Pictures/fern.png`): a close-up photograph of fern leaves.
   Its original source and license were not recorded when this repo was created. Replace it
   with an image you have the rights to before redistributing.

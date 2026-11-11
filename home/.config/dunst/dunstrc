@@ -1,4 +1,4 @@
-# Earth Blue notifications (dunst). Minimal: no icons, 1px border, regular weight.
+# Fern notifications (dunst). Minimal: no icons, 1px border, regular weight.
 [global]
     font = JetBrainsMono Nerd Font Mono 12
     format = "%s\n%b"
@@ -19,21 +19,21 @@
     progress_bar_corner_radius = 0
 
 [urgency_low]
-    background = "#0b111c"
-    foreground = "#5f7fa6"
-    frame_color = "#5f7fa6"
+    background = "#0f1613"
+    foreground = "#73886f"
+    frame_color = "#73886f"
     timeout = 4
 
 [urgency_normal]
-    background = "#0b111c"
-    foreground = "#a9c4e6"
-    frame_color = "#8fb3de"
-    highlight = "#8fb3de"
+    background = "#0f1613"
+    foreground = "#b9c9b0"
+    frame_color = "#a5b98f"
+    highlight = "#a5b98f"
     timeout = 4
 
 [urgency_critical]
-    background = "#0b111c"
-    foreground = "#d6e6fa"
-    frame_color = "#d6e6fa"
-    highlight = "#d6e6fa"
+    background = "#0f1613"
+    foreground = "#e4ecd8"
+    frame_color = "#e4ecd8"
+    highlight = "#e4ecd8"
     timeout = 0

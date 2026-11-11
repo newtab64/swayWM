@@ -1,9 +1,9 @@
-/* Earth Blue for GTK3 apps (Thunar): regular weight, flat, palette colours only. */
-@define-color bg  #0b111c;
-@define-color fg  #a9c4e6;
-@define-color dim #5f7fa6;
-@define-color acc #8fb3de;
-@define-color bri #d6e6fa;
+/* Fern for GTK3 apps (Thunar): regular weight, flat, palette colours only. */
+@define-color bg  #0f1613;
+@define-color fg  #b9c9b0;
+@define-color dim #73886f;
+@define-color acc #a5b98f;
+@define-color bri #e4ecd8;
 
 * {
     font-weight: normal;

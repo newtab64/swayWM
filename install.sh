@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install the Earth Blue configuration into $HOME.
+# Install the Fern configuration into $HOME.
 #
 #   bash install.sh [--dry-run]
 #
@@ -39,8 +39,11 @@ fi
 # Refresh the font cache and confirm the font is visible.
 if [ "$DRY" = 0 ]; then
   fc-cache -f
-  fc-list | grep -qi "JetBrainsMono Nerd Font Mono" \
-    && echo "font OK" || echo "warning: JetBrainsMono Nerd Font Mono not found" >&2
+  if fc-list | grep -i "JetBrainsMono Nerd Font Mono" > /dev/null; then
+    echo "font OK"
+  else
+    echo "warning: JetBrainsMono Nerd Font Mono not found" >&2
+  fi
 fi
 
 echo "Done. Log out and back in to apply the Wayland-only settings."

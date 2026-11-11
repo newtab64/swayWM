@@ -22,7 +22,7 @@ set $term foot
 # Recommends: rofi-wayland
 set $rofi_cmd rofi \
         -terminal '$term' \
-        -theme ~/.config/rofi/earth-blue.rasi \
+        -theme ~/.config/rofi/fern.rasi \
         -combi-display-format '{text}'
 # Shows a combined list of the applications with desktop files and
 # executables from PATH.
@@ -32,8 +32,8 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# Earth Blue wallpaper (PNG, so no extra image loader is needed)
-output * bg ~/Pictures/earth.png fill
+# Fern wallpaper (PNG, so no extra image loader is needed)
+output * bg ~/Pictures/fern.png fill
 #
 # Example configuration:
 #
