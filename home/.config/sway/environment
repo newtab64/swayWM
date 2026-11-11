@@ -1,0 +1,9 @@
+# Read by Fedora's start-sway for your user (see /etc/sway/environment).
+# Wayland only: no X11 fallback. An app that only supports X11 will fail to start.
+XDG_SESSION_TYPE=wayland
+GDK_BACKEND=wayland
+QT_QPA_PLATFORM=wayland
+SDL_VIDEODRIVER=wayland
+CLUTTER_BACKEND=wayland
+MOZ_ENABLE_WAYLAND=1
+ELECTRON_OZONE_PLATFORM_HINT=wayland

@@ -1,0 +1,100 @@
+/* Earth Blue for GTK3 apps (Thunar): regular weight, flat, palette colours only. */
+@define-color bg  #0b111c;
+@define-color fg  #a9c4e6;
+@define-color dim #5f7fa6;
+@define-color acc #8fb3de;
+@define-color bri #d6e6fa;
+
+* {
+    font-weight: normal;
+}
+
+window, .background, dialog, popover, popover.background {
+    background-color: @bg;
+    color: @fg;
+}
+
+window.csd, decoration {
+    box-shadow: none;
+    border: 1px solid @dim;
+}
+
+window:not(.csd):backdrop { border-color: @dim; }
+decoration:not(:backdrop) { border-color: @bri; }
+
+headerbar, .titlebar, toolbar, .toolbar, statusbar, .statusbar, menubar {
+    background: @bg;
+    color: @fg;
+    border: none;
+    border-bottom: 1px solid @dim;
+    box-shadow: none;
+}
+
+button {
+    background: @bg;
+    color: @fg;
+    border: 1px solid @dim;
+    box-shadow: none;
+    text-shadow: none;
+}
+button:hover, button:checked { background: @acc; color: @bg; }
+
+entry, spinbutton {
+    background: @bg;
+    color: @bri;
+    border: 1px solid @dim;
+    box-shadow: none;
+}
+entry:focus { border-color: @acc; }
+
+.sidebar, .sidebar row, placessidebar, placessidebar row, scrolledwindow, viewport,
+treeview, treeview.view, iconview, .view, textview text {
+    background-color: @bg;
+    color: @fg;
+}
+
+treeview.view header button {
+    color: @dim;
+    border: none;
+    border-bottom: 1px solid @dim;
+}
+
+row:selected, treeview.view:selected, iconview:selected, .view:selected,
+.sidebar row:selected, placessidebar row:selected, menuitem:hover, modelbutton:hover {
+    background-color: @acc;
+    color: @bg;
+}
+
+menu, .menu, .popup {
+    background-color: @bg;
+    color: @fg;
+    border: 1px solid @dim;
+}
+
+separator { background-color: @dim; }
+scrollbar slider { background-color: @dim; border: none; }
+tooltip, tooltip.background { background-color: @bg; color: @fg; border: 1px solid @dim; }
+
+/* ---- Minimal Thunar chrome ---- */
+/* flat toolbar buttons: plain glyphs, no boxes */
+toolbar button, .toolbar button, headerbar button {
+    border-color: transparent;
+    background: transparent;
+    color: @acc;
+}
+toolbar button:hover, toolbar button:checked, .toolbar button:hover {
+    background: @acc;
+    color: @bg;
+}
+/* path bar stays boxed */
+toolbar entry { border: 1px solid @dim; }
+
+/* status bar: dim text, top rule only */
+statusbar, .statusbar, statusbar label { color: @dim; }
+statusbar, .statusbar { border: none; border-top: 1px solid @dim; }
+statusbar > *, paned > separator, paned > separator:hover {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    min-width: 0;
+}
