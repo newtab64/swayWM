@@ -17,9 +17,6 @@ esac
 
 run() { if [ "$DRY" = 1 ]; then echo "[dry-run] $*"; else "$@"; fi; }
 
-# Thunar rewrites its settings file on exit, so close it before copying.
-run thunar -q 2>/dev/null || true
-
 # Copy the tree.
 while IFS= read -r -d '' src; do
   rel="${src#"$ROOT/home/"}"
@@ -27,14 +24,6 @@ while IFS= read -r -d '' src; do
   run cp "$src" "$HOME/$rel"
   echo "installed ~/$rel"
 done < <(find "$ROOT/home" -type f -print0 | sort -z)
-
-# Hide Desktop from Thunar's sidebar by pointing the Desktop directory at $HOME.
-user_dirs="$HOME/.config/user-dirs.dirs"
-if [ -f "$user_dirs" ] && grep -q '^XDG_DESKTOP_DIR=' "$user_dirs"; then
-  # shellcheck disable=SC2016  # $HOME must stay literal in user-dirs.dirs
-  run sed -i 's|^XDG_DESKTOP_DIR=.*|XDG_DESKTOP_DIR="$HOME"|' "$user_dirs"
-  echo "updated ~/.config/user-dirs.dirs"
-fi
 
 # Refresh the font cache and confirm the font is visible.
 if [ "$DRY" = 0 ]; then
