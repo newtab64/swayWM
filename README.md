@@ -5,7 +5,7 @@ A minimal, pastel-fern desktop theme for **Fedora Sway Atomic 45**, in the spiri
 Pure dotfiles: **nothing is layered** onto the base image and no package is installed.
 
 - Sway, Waybar (icon-only bar), foot, rofi, swaylock and Thunar share one six-colour palette.
-- One font, SF Pro, with JetBrainsMono Nerd Font Mono kept only for the bar icons. No bold anywhere.
+- One font, SF Pro Display, with JetBrainsMono Nerd Font Mono kept only for the bar icons. No bold anywhere.
 - One-line prompt: `user@PC:~$`.
 - Fedora's stock keybindings and `config.d` files are kept; only the look is changed.
 - Wayland only: Xwayland is disabled, with no X11 fallback.
