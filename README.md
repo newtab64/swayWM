@@ -33,7 +33,7 @@ Files that are not in this repo are left alone. It also closes Thunar first and 
 | `.config/sway/config` | Fedora's stock sway config with two edits: wallpaper and the rofi theme. |
 | `.config/sway/config.d/10-fern.conf` | Font, borders, gaps, GTK icon theme and dark mode, `xwayland disable`. |
 | `.config/sway/environment` | Forces Wayland backends (GTK, Qt, SDL, Firefox, Electron). |
-| `.config/waybar/` | Bar: workspaces, tray, battery, wifi, volume, clock (icons only). |
+| `.config/waybar/` | Bar: workspaces, tray (Fedora's network applet lives here), battery, volume, clock. |
 | `.config/foot/foot.ini` | Terminal colours, blinking sand cursor, 80% opaque background, 32px padding. |
 | `.config/rofi/fern.rasi` | Launcher theme. |
 | `.config/swaylock/config` | Lock screen colours. |

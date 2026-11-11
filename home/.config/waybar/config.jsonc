@@ -10,7 +10,7 @@
 
     "modules-left": ["sway/workspaces"],
     "modules-center": [],
-    "modules-right": ["tray", "battery", "network", "pulseaudio", "clock"],
+    "modules-right": ["tray", "battery", "pulseaudio", "clock"],
 
     "sway/workspaces": {
         "disable-scroll": true,
@@ -27,13 +27,6 @@
         "format": "󰁹 {capacity}%",
         "interval": 5,
         "states": { "warning": 20, "critical": 10 },
-        "tooltip": false
-    },
-
-    "network": {
-        "format-wifi": "󰤨",
-        "format-ethernet": "󰤨",
-        "format-disconnected": "󰤭",
         "tooltip": false
     },
 
