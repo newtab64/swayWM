@@ -1,6 +1,6 @@
 # Fern for Fedora Sway Atomic
 
-A minimal, charcoal-and-sand desktop theme for **Fedora Sway Atomic 45**, in the spirit of
+A minimal, light-blue-and-cream desktop theme for **Fedora Sway Atomic 45**, in the spirit of
 [mubin-thinks/minimal-wm-config](https://github.com/mubin-thinks/minimal-wm-config).
 Pure dotfiles: **nothing is layered** onto the base image and no package is installed.
 
@@ -40,24 +40,18 @@ Files that are not in this repo are left alone.
 | `.local/share/fonts/` | JetBrainsMono Nerd Font Mono Regular. |
 | `.bashrc.d/prompt.sh` | `PS1='\u@PC:\w\$ '` (Fedora's `.bashrc` already sources this folder). |
 
-## Firefox
-
-`firefox/chrome/userChrome.css` themes Firefox's own interface (tabs, address bar, menus) in
-the same palette. `install.sh` copies it into every Firefox profile it finds and enables
-`toolkit.legacyUserProfileCustomizations.stylesheets` in that profile's `user.js`. Restart
-Firefox afterwards. It does not touch web pages.
-
 ## Palette
 
-Colours from the Charcoal Monochrome Dark theme of
-[minimal-wm-config](https://codeberg.org/mubin-thinks/minimal-wm-config).
+Taken from the colours in the `earth.avif` wallpaper (deep blue of the planet, its cloud
+blue lifted to light blue, and the cream of the city lights).
 
 | Role | Hex |
 |---|---|
-| background | `#120e08` |
-| text, accent (bar, selection) | `#b3976d` |
-| dim (inactive, borders) | `#8c734e` |
-| bright (focused border, active workspace, cursor) | `#d1b994` |
+| background | `#06121e` |
+| main (bar, selection, accents) | `#9bbbe0` |
+| dim (inactive windows, borders) | `#46607e` |
+| yellow (focused border, active workspace, cursor, launcher selection) | `#f6deae` |
+| text | `#c4d6ea` |
 
 ## Keybindings
 
