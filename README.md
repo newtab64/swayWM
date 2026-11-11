@@ -5,7 +5,7 @@ A minimal, pastel-fern desktop theme for **Fedora Sway Atomic 45**, in the spiri
 Pure dotfiles: **nothing is layered** onto the base image and no package is installed.
 
 - Sway, Waybar (icon-only bar), foot, rofi, swaylock and Thunar share one six-colour palette.
-- One font, SF Pro Display, with JetBrainsMono Nerd Font Mono kept only for the bar icons. No bold anywhere.
+- One font, JetBrainsMono Nerd Font Mono Regular. No bold anywhere.
 - One-line prompt: `user@PC:~$`.
 - Fedora's stock keybindings and `config.d` files are kept; only the look is changed.
 - Wayland only: Xwayland is disabled, with no X11 fallback.
@@ -39,7 +39,7 @@ Files that are not in this repo are left alone. It also closes Thunar first and 
 | `.config/swaylock/config` | Lock screen colours. |
 | `.config/gtk-3.0/`, `.config/xfce4/…/thunar.xml` | Thunar theme and a plain list view (Name, Size). |
 | `.local/share/icons/Fern/` | Minimal outline icon theme for files and folders. |
-| `.local/share/fonts/` | JetBrainsMono Nerd Font Mono, used only as the icon fallback. SF Pro is not bundled: install it yourself (see below). |
+| `.local/share/fonts/` | JetBrainsMono Nerd Font Mono Regular. |
 | `.bashrc.d/prompt.sh` | `PS1='\u@PC:\w\$ '` (Fedora's `.bashrc` already sources this folder). |
 
 ## Palette
@@ -65,10 +65,6 @@ can. Drag Documents, Music, Pictures, Videos and Downloads onto the side pane, a
 right-click an empty spot to untick entries you don't want. Separator lines are not possible.
 
 ## Notes
-
-- **SF Pro is Apple's font and is not included.** Download it from Apple, copy the
-  `.otf`/`.ttf` files to `~/.local/share/fonts/`, then run `fc-cache -f`. Until then, apps
-  fall back to a default font.
 
 - **X11-only apps will not start.** To allow them, delete `xwayland disable` from
   `10-fern.conf` and remove `.config/sway/environment`.

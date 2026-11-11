@@ -1,6 +1,6 @@
 # Fern notifications (dunst). Minimal: no icons, 1px border, regular weight.
 [global]
-    font = SF Pro Display 12
+    font = JetBrainsMono Nerd Font Mono 12
     format = "%s\n%b"
     markup = no
     icon_position = off
