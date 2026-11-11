@@ -10,11 +10,17 @@
 
     "modules-left": ["sway/workspaces"],
     "modules-center": [],
-    "modules-right": ["tray", "battery", "pulseaudio", "clock"],
+    "modules-right": ["custom/vpn", "tray", "battery", "pulseaudio", "clock"],
 
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
+        "tooltip": false
+    },
+
+    "custom/vpn": {
+        "exec": "nmcli -t -f TYPE connection show --active | grep -qE '^(vpn|wireguard)' && echo '󰖂 VPN'",
+        "interval": 3,
         "tooltip": false
     },
 

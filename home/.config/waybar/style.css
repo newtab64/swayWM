@@ -13,12 +13,16 @@ window#waybar {
     border: 1px solid #9cc79a;
 }
 
-#clock, #pulseaudio, #network, #tray, #battery {
+#clock, #pulseaudio, #network, #tray, #battery, #custom-vpn {
     margin: 8px 8px 8px 0px;
     padding: 2px 8px 2px 8px;
     color: #0d1512;
     background-color: #9cc79a;
     border: 2px solid #6a8a72;
+}
+
+#custom-vpn {
+    background-color: #e6d98a;
 }
 
 #workspaces {
