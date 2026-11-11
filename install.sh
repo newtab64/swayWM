@@ -22,11 +22,11 @@ while IFS= read -r -d '' src; do
   rel="${src#"$ROOT/home/"}"
   run mkdir -p "$(dirname "$HOME/$rel")"
   run cp "$src" "$HOME/$rel"
-  echo "installed ~/$rel"
+  if [ "$DRY" = 1 ]; then echo "would install ~/$rel"; else echo "installed ~/$rel"; fi
 done < <(find "$ROOT/home" -type f -print0 | sort -z)
 
 # Refresh the font cache and confirm the font is visible.
-if [ "$DRY" = 0 ]; then
+if [ "$DRY" = 0 ] && command -v fc-cache > /dev/null; then
   fc-cache -f
   if fc-list | grep -i "JetBrainsMono Nerd Font Mono" > /dev/null; then
     echo "font OK"
