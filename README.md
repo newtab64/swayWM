@@ -30,7 +30,7 @@ Files that are not in this repo are left alone. It also closes Thunar first and 
 
 | Path | Purpose |
 |---|---|
-| `.config/sway/config` | Fedora's stock sway config with two edits: wallpaper and the rofi theme. |
+| `.config/sway/config` | Fedora's stock sway config with one edit: the rofi theme. |
 | `.config/sway/config.d/10-fern.conf` | Font, borders, gaps, GTK icon theme and dark mode, `xwayland disable`. |
 | `.config/sway/environment` | Forces Wayland backends (GTK, Qt, SDL, Firefox, Electron). |
 | `.config/waybar/` | Bar: workspaces, tray (Fedora's network applet lives here), battery, volume, clock. |
@@ -41,7 +41,6 @@ Files that are not in this repo are left alone. It also closes Thunar first and 
 | `.local/share/icons/Fern/` | Minimal outline icon theme for files and folders. |
 | `.local/share/fonts/` | JetBrainsMono Nerd Font Mono Regular. |
 | `.bashrc.d/prompt.sh` | `PS1='\u@PC:\w\$ '` (Fedora's `.bashrc` already sources this folder). |
-| `Pictures/fern.png` | Wallpaper. |
 
 ## Palette
 

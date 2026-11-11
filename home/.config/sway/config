@@ -24,16 +24,13 @@ set $rofi_cmd rofi \
         -terminal '$term' \
         -theme ~/.config/rofi/fern.rasi \
         -combi-display-format '{text}'
-# Shows a combined list of the applications with desktop files and
-# executables from PATH.
-# TODO: add window with the next release of rofi-wayland
-set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+# Shows only applications that have desktop files (no raw PATH executables).
+set $menu $rofi_cmd -show drun -modes drun
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# Fern wallpaper (PNG, so no extra image loader is needed)
-output * bg ~/Pictures/fern.png fill
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
