@@ -1,8 +1,8 @@
 * {
-    bg:     #0d1512;
-    fg:     #6a8a72;
-    acc:    #9cc79a;
-    sel:    #e6d98a;
+    bg:     #120e08;
+    fg:     #8c734e;
+    acc:    #b3976d;
+    sel:    #d1b994;
     font:   "JetBrainsMono Nerd Font Mono 14";
     background-color: transparent;
     text-color: @fg;

@@ -1,6 +1,6 @@
 # Fern for Fedora Sway Atomic
 
-A minimal, pastel-fern desktop theme for **Fedora Sway Atomic 45**, in the spirit of
+A minimal, charcoal-and-sand desktop theme for **Fedora Sway Atomic 45**, in the spirit of
 [mubin-thinks/minimal-wm-config](https://github.com/mubin-thinks/minimal-wm-config).
 Pure dotfiles: **nothing is layered** onto the base image and no package is installed.
 
@@ -42,14 +42,15 @@ Files that are not in this repo are left alone.
 
 ## Palette
 
+Colours from the Charcoal Monochrome Dark theme of
+[minimal-wm-config](https://codeberg.org/mubin-thinks/minimal-wm-config).
+
 | Role | Hex |
 |---|---|
-| background | `#0d1512` |
-| text | `#b5d1b0` |
-| dim (inactive, borders) | `#6a8a72` |
-| accent (bar, selection) | `#9cc79a` |
-| bright (focused border) | `#dff0d6` |
-| sand (active workspace, cursor, selected launcher entry) | `#e6d98a` |
+| background | `#120e08` |
+| text, accent (bar, selection) | `#b3976d` |
+| dim (inactive, borders) | `#8c734e` |
+| bright (focused border, active workspace, cursor) | `#d1b994` |
 
 ## Keybindings
 
